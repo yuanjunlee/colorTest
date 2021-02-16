@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Test</title>
+        <script src="jquery.min.js"></script>
+        <script src="arr.js"></script>
+        <script src="util.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body style="font-family: consolas;">
+        <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        ">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <div id="inputColorBlock" style="
+                                width: 100px;
+                                height: 100px;
+                                margin: auto;
+                                background-color: rgb(0, 0, 0);
+                            "></div>
+                            <table style="
+                                margin: auto;
+                                margin-top: 30px;
+                            ">
+                                <tr>
+                                    <td>R:</td>
+                                    <td><input class="inputRGB" id="inputR" type="number" min="0" max="255" value="0"></td>
+                                    <td>H:</td>
+                                    <td><input class="inputHSV" id="inputH" type="number" min="-1" max="360" step="0.1" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>G:</td>
+                                    <td><input class="inputRGB" id="inputG" type="number" min="0" max="255" value="0"></td>
+                                    <td>S:</td>
+                                    <td><input class="inputHSV" id="inputS" type="number" min="0" max="100" step="0.1" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>B:</td>
+                                    <td><input class="inputRGB" id="inputB" type="number" min="0" max="255" value="0"></td>
+                                    <td>V:</td>
+                                    <td><input class="inputHSV" id="inputV" type="number" min="0" max="100" step="0.1" value="0"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="
+                            padding: 20px;
+                            display: inline-block;
+                        ">
+                            <table style="
+                                margin: auto;
+                            ">
+                                <tr>
+                                    <td>R saturation:</td>
+                                    <td><input class="ccmControl ccmAttr" id="satR" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr>
+                                    <td>G saturation:</td>
+                                    <td><input class="ccmControl ccmAttr" id="satG" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr>
+                                    <td>B saturation:</td>
+                                    <td><input class="ccmControl ccmAttr" id="satB" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr style="height: 30px;"></tr>
+                                <tr>
+                                    <td>R enhancement:</td>
+                                    <td><input class="ccmControl ccmAttr" id="enhR" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr>
+                                    <td>G enhancement:</td>
+                                    <td><input class="ccmControl ccmAttr" id="enhG" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr>
+                                    <td>B enhancement:</td>
+                                    <td><input class="ccmControl ccmAttr" id="enhB" type="number" min="0" max="5" step="0.1" value="1"></td>
+                                </tr>
+                                <tr style="height: 30px;"></tr>
+                                <tr>
+                                    <td>Gamma:</td>
+                                    <td>
+                                        <select class="ccmControl" id="gammaSelect">
+                                            <option value="0">None</option>
+                                            <option value="1" selected="selected">BT.709</option>
+                                            <option value="2">Gamma 2.2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="
+                            padding: 20px;
+                            display: inline-block;
+                        ">
+                            <div id="outputColorBlock" style="
+                                width: 100px;
+                                height: 100px;
+                                margin: auto;
+                                background-color: rgb(0, 0, 0);
+                            "></div>
+                            <table style="
+                                margin: auto;
+                                margin-top: 30px;
+                            ">
+                                <tr>
+                                    <td>R:</td>
+                                    <td><input class="outputRGB" id="outputR" type="number" min="0" max="255" value="0"></td>
+                                    <td>H:</td>
+                                    <td><input class="outputHSV" id="outputH" type="number" min="-1" max="360" step="0.1" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>G:</td>
+                                    <td><input class="outputRGB" id="outputG" type="number" min="0" max="255" value="0"></td>
+                                    <td>S:</td>
+                                    <td><input class="outputHSV" id="outputS" type="number" min="0" max="100" step="0.1" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>B:</td>
+                                    <td><input class="outputRGB" id="outputB" type="number" min="0" max="255" value="0"></td>
+                                    <td>V:</td>
+                                    <td><input class="outputHSV" id="outputV" type="number" min="0" max="100" step="0.1" value="0"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
